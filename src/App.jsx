@@ -4,6 +4,8 @@ import './App.css'
 import React,{Component} from "react"
 import Counter from './component/Counter';
 import { Functional } from './component/CounterFunctional';
+import Student1 from './component/HOF/student1';
+import Student2 from './component/HOF/student2';
 
 class App extends Component {
 
@@ -36,6 +38,9 @@ constructor(){
         </button>
 
         <Functional number={this.state.count}/>
+
+        <Student1/>
+        <Student2/>
       </div>
     )
   }
